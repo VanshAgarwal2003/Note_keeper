@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: black;
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	margin-top: 0.2em;
+	font-size: 1.5em;
+}
+
+.logo .heading1 {
+	position: relative;
+	left: 2em;
+	bottom: 0.5em;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.navbar::after {
+	content: "";
+	background: url("../clay-banks-pNEmlb1CMZM-unsplash.jpg") no-repeat center center/cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	font-family: 'Rubik', sans-serif;
+	background-color: #fea004;
+	height: 5em;
+	box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ullist {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+	margin-left: 6em;
+}
+
+.ullist li {
+	list-style: none;
+}
+
+.ullist li a {
+	text-decoration: none;
+	padding: 10px 1.5em;
+	color: white;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.ullist li a:hover {
+	text-decoration: overline;
+	transition: 0.55s;
+}
+
+.container {
+	text-align: center;
+	margin-top: 36em;
+	margin-right: 1em;
+}
+
+.btn {
+	background-color: #fea004;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.btn1{
+	color:white;
+}
+.btn1:hover{
+	color:white;
+}

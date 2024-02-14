@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.2em;
+    font-size: 1.5em;
+}
+.logo .heading1{
+    position: relative;
+    left:2em;
+    bottom: 0.5em;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rubik', sans-serif;
+    background-color: #fbc02d;
+    height:5em;
+}
+.ullist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-left: 6em;
+}
+.ullist li{
+    list-style: none;
+}
+.ullist li a{
+    text-decoration: none;
+    padding: 10px 1.5em;
+    color:white;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+.ullist li a:hover{
+    text-decoration:overline;
+    transition: 0.55s;
+}

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: black;
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	margin-top: 0.2em;
+	font-size: 1.5em;
+}
+
+.logo .heading1 {
+	position: relative;
+	left: 2em;
+	bottom: 0.5em;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.navbar::after {
+	content: "";
+	position: absolute;
+	background: url("../clay-banks-pNEmlb1CMZM-unsplash.jpg") no-repeat center center/cover;
+	top: 0;
+	left: 0;
+	width: 98.8vw;
+	height: 110vh;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	font-family: 'Rubik', sans-serif;
+	background-color: #fea004;
+	height: 5em;
+	box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ullist {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+	margin-left: 6em;
+}
+
+.ullist li {
+	list-style: none;
+}
+
+.ullist li a {
+	text-decoration: none;
+	padding: 10px 1.5em;
+	color: white;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.ullist li a:hover {
+	text-decoration: overline;
+	transition: 0.55s;
+}
+
+.userForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    border: 2px solid black;
+    width:72%;
+    position: relative;
+    background-color: white;
+    left:12em;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+}
+.userForm input,
+.userForm textarea:not(.btn){
+    width:95%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+.userForm input{
+    display: block;
+    margin: auto;
+    height: 2.5em;
+    background-color: transparent;
+    color: black;
+    cursor: initial;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.8em;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-family: 'Amaranth', sans-serif;
+
+}
+.userForm textarea{
+    resize: none;
+    height: 23em;
+    margin-top: 3em;
+    font-weight: bold;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.2em;
+}
+.userForm .btn{
+    width: 4em;
+    height: 2em;
+    margin-top: 1.5em;
+    border: 0;
+    margin-bottom: 1em;
+    background-color: rgb(65, 133, 210);
+    color:white;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+.userForm .btn:hover{
+    box-shadow: 2px 3px 2px  black;
+}

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(210, 210, 210);
+}
+.userForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    border: 2px solid black;
+    width:72%;
+    position: relative;
+    background-color: white;
+    left:12em;
+}
+.userForm input,
+.userForm textarea:not(.btn){
+    width:95%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+.userForm input{
+    display: block;
+    margin: auto;
+    height: 2.5em;
+    background-color: transparent;
+    color: black;
+    cursor: initial;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.8em;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-family: 'Amaranth', sans-serif;
+
+}
+.userForm textarea{
+    resize: none;
+    height: 23em;
+    margin-top: 3em;
+    font-weight: bold;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.2em;
+}
+.userForm .btn{
+    width: 4em;
+    height: 2em;
+    margin-top: 1.5em;
+    border: 0;
+    margin-bottom: 1em;
+    background-color: rgb(65, 133, 210);
+    color:white;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+.userForm .btn:hover{
+    box-shadow: 2px 3px 2px  black;
+}
